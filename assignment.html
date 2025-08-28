@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Doc</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+<body>
+    <div class="body">
+        <h1>Loan Request</h1>
+        <div class="financeContent">
+            <div class="financeView">
+                <p  class="amounttxt">Account Balance</p>
+                <h2 class="amount">₦
+                    <span class="amount" id="currentBalance">0</span>
+                </h2>
+            </div>
+
+            <div class="balanceAdd">
+                <label for="">Place an amount to Deposit</label>
+                <input type="number" id="inputAdd">
+                <button id="btnAdd">Deposit</button>
+            </div>
+
+            <div class="balanceWithdraw">
+                <label for="">Place an amount to Withdraw</label>
+                <input type="number" id="inputWithdraw">
+                <button id="btnWithdraw">Withdraw</button>
+            </div>
+        </div>
+
+        <div class="financeContent">
+            <div class="financeView">
+                <p class="amounttxt">Loan amount</p>
+                <h2 class="amount">₦
+                    <span class="amount" id="loanBalance">0</span>
+                </h2>
+            </div>
+
+            <div class="balanceAdd">
+                <label for="">Add amount</label>
+                <input type="number" id="loanAdd">
+                <button id="loanBtnAdd">Add</button>
+            </div>
+
+            <div class="balanceWithdraw">
+                <label for="">Remove amount</label>
+                <input type="number" id="loanRemove">
+                <button id="loanBtnRemove">Remove</button>
+            </div>
+        </div>
+
+        <h2 class="form">Form</h2>
+        <p>Fill the form down below with the appropriate answers to request for a loan</p>
+        <div id="form">
+            <div>
+                <label for="">Account type</label>
+                <select name="" id="savingsCurrent">
+                    <option value="">Savings/Current</option>
+                    <option value="savings">Savings Account</option>
+                    <option value="current">Current Account</option>
+                </select>
+            </div>
+            <div class="formContent">
+                <div>
+                    <label for="">Last deposit date</label>
+                    <select name="" id="depositDate">
+                        <option value="">Last deposit</option>
+                        <option value="within1">Within 1 Month</option>
+                        <option value="over">+1 Month</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Credit History</label>
+                    <select name="" id="creditHistory">
+                        <option value="">Credit History</option>
+                        <option value="within6">Within 6 Months</option>
+                        <option value="over">+6 Months</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formContent">
+                <div>
+                    <label for="">Most recent Loan collection date</label>
+                    <select name="" id="loanCollectionDate">
+                        <option value="">Loan history</option>
+                        <option value="within">Within 6 Months</option>
+                        <option value="over6">+6 Months</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Loan repayment period</label>
+                    <select name="" id="loanRepaymentPeriod">
+                        <option value="">Repayment period</option>
+                        <option value="within6">Within 6 Months</option>
+                        <option value="over">+6 Months</option>
+                    </select>
+                </div>
+            </div>
+            <button id="submitForm">Submit</button>
+        </div>
+        <p id="pointCounter">Loan points: 0</p>
+        <button id="removePoints">Remove loan points</button>
+    </div>
+
+</body>
+<script src="assignment.js"></script>
+
+</html>
